@@ -1,0 +1,39 @@
+File Information
+Description	
+Conventional optimization algorithms using linear and non-linear programming sometimes have difficulty in finding the global optima or in case of multi-objective optimization, the pareto front. A lot of research has now been directed towards evolutionary algorithms (genetic algorithm, particle swarm optimization etc) to solve multi objective optimization problems.
+
+Here in this example a famous evolutionary algorithm, NSGA-II is used to solve two multi-objective optimization problems. Both problems have a continuous decision variable space while the objective space may or may not be continuous. The first example, MOP1, has two objective functions and six decision variables, while the second example, MOP2, has three objective functions and twelve decision variables.
+
+nsga_2.m is the main function (in fact it is mainly a script). Kindly read the accompanied pdf file and also published M-files.
+
+Since there has been a lot of interest in evolutionary algorithms, I am sharing my homework files from last semester. Feel free to edit them according to your needs and feel free to post your comments/suggestion/critisim. I am more than happy to hear from your.
+
+For more information on NSGA-II visit Kanpur Genetic Algorithm Laboratory at http://www.iitk.ac.in/kangal/
+
+Effective January 30, 2009 this code is released under GPLv3. Feel free to use, modify and distribute the derivatives. But do remember to contribute the code back to the community.
+
+Effective July 17, 2009 this code is re-licensed under BSD license to comply with Mathworks policy on submissions to MATLAB central.
+
+Note: I no longer have the resources to maintain this code.
+
+MATLAB release	 MATLAB 7.0.1 (R14SP1)
+Other requirements	Evolutionary algorithms are CPU and memory intensive. Recommended CPU clock speed is 1.6GHz with atleast 512MB RAM.
+Zip File Content	 
+Published MATLAB Files	function f = genetic_operator(parent_chromosome,pro,mu,mum);, function f = crowding_distance(x,problem), function f = initialize_variables(N,problem), function f = selection_individuals(chromosome,pool_size,tour_size), Main Function, Non-Donimation Sort, replace_chromosome(intermediate_chromosome,pro,pop)
+Other Files	
+license.txt, 
+MOEA-NSGA-II/crowding_distance.m, 
+MOEA-NSGA-II/evaluate_objective.m, 
+MOEA-NSGA-II/genetic_operator.m, 
+MOEA-NSGA-II/initialize_variables.m, 
+MOEA-NSGA-II/non_domination_sort_mod.m, 
+MOEA-NSGA-II/nsga_2.m, 
+MOEA-NSGA-II/NSGA_2.pdf, 
+MOEA-NSGA-II/plot_objective.m, 
+MOEA-NSGA-II/replace_chromosome.m, 
+MOEA-NSGA-II/tournament_selection.m
+Tags for This File  
+Everyone's Tags	
+genetic algorithm(5), multiobjective optimization(5), nsga ii(2), nsgaii(3), optimization(5)
+Tags I've Applied	
+Add New Tags	Please login to tag files.
